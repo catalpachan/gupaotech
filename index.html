@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>星火科技 | 官网首页</title>
+  <title>咕泡科技 | 官网首页</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
   <div class="site-shell">
     <header class="header">
-      <div class="container header__inner glass glass--header">
-        <a href="#" class="logo" aria-label="星火科技首页">
-          星火科技
-          <span>SPARK TECH</span>
+      <div class="header__inner glass glass--header">
+        <a href="#" class="logo" aria-label="咕泡科技首页">
+          咕泡科技
+          <span>GUPAO TECH</span>
         </a>
 
         <nav class="nav" aria-label="主导航">
@@ -32,16 +32,74 @@
 
     <main>
       <section class="container category-panel glass" aria-label="一级分类标签">
-        <div class="category-panel__head">
-          <h2 class="category-panel__title category-panel__title--active">AI 系列</h2>
-          <h2 class="category-panel__title">IT 职场</h2>
+        <p class="section-tag">一级分类标签</p>
+        <div class="category-switch">
+          <input class="category-switch__input" type="radio" name="businessTab" id="tab-ai" checked />
+          <input class="category-switch__input" type="radio" name="businessTab" id="tab-it" />
+
+          <div class="category-switch__tabs" role="tablist" aria-label="业务分类">
+            <label class="category-switch__tab" for="tab-ai" role="tab" aria-controls="panel-ai">AI 系列</label>
+            <label class="category-switch__tab" for="tab-it" role="tab" aria-controls="panel-it">IT 职场</label>
+          </div>
+
+          <div class="category-content category-content--ai" id="panel-ai">
+            <ul class="product-grid">
+              <li class="product-card">
+                <p class="product-card__kicker">AI 通识</p>
+                <h3>AI 认知与工具入门</h3>
+                <p>建立 AI 核心概念、应用场景与工具链基础认知，适配零基础学习者。</p>
+                <span class="product-card__meta">查看产品方向</span>
+              </li>
+              <li class="product-card">
+                <p class="product-card__kicker">AI 应用</p>
+                <h3>企业 AIGC 应用实践</h3>
+                <p>面向企业真实业务场景，训练提示工程、流程自动化与协同落地能力。</p>
+                <span class="product-card__meta">查看产品方向</span>
+              </li>
+              <li class="product-card">
+                <p class="product-card__kicker">论文辅导</p>
+                <h3>学术论文方法论营</h3>
+                <p>提供选题、实验设计、复现与写作辅导，强化研究成果输出质量。</p>
+                <span class="product-card__meta">查看产品方向</span>
+              </li>
+              <li class="product-card">
+                <p class="product-card__kicker">竞赛指导</p>
+                <h3>AI 竞赛高阶训练</h3>
+                <p>围绕数据建模与模型优化策略，构建竞赛型问题拆解与冲榜能力。</p>
+                <span class="product-card__meta">查看产品方向</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="category-content category-content--it" id="panel-it">
+            <ul class="product-grid">
+              <li class="product-card">
+                <p class="product-card__kicker">架构成长</p>
+                <h3>后端架构师进阶</h3>
+                <p>覆盖高并发、高可用与可观测体系，构建系统级工程设计与治理能力。</p>
+                <span class="product-card__meta">查看产品方向</span>
+              </li>
+              <li class="product-card">
+                <p class="product-card__kicker">工程效率</p>
+                <h3>DevOps 与交付体系</h3>
+                <p>从研发流程到持续交付，提升团队工程效率与质量保障闭环能力。</p>
+                <span class="product-card__meta">查看产品方向</span>
+              </li>
+              <li class="product-card">
+                <p class="product-card__kicker">职业跃迁</p>
+                <h3>技术管理者训练营</h3>
+                <p>强化团队协同、项目节奏与业务沟通能力，支持从骨干到管理者升级。</p>
+                <span class="product-card__meta">查看产品方向</span>
+              </li>
+              <li class="product-card">
+                <p class="product-card__kicker">就业实战</p>
+                <h3>全栈项目实训计划</h3>
+                <p>通过真实项目协作与复盘，沉淀可展示的作品与岗位竞争力。</p>
+                <span class="product-card__meta">查看产品方向</span>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="tabs" aria-label="分类标签">
-          <li><a class="tabs__item active" href="#">AI 通识</a></li>
-          <li><a class="tabs__item" href="#">AI 应用</a></li>
-          <li><a class="tabs__item" href="#">论文辅导</a></li>
-          <li><a class="tabs__item" href="#">竞赛指导</a></li>
-        </ul>
       </section>
 
       <section class="container hero glass" aria-label="主视觉">
@@ -219,19 +277,19 @@
     <footer class="footer" aria-label="页脚信息">
       <div class="container footer__inner">
         <div class="footer__brand">
-          <h2>星火科技</h2>
+          <h2>咕泡科技 GUPAO TECH</h2>
           <p>面向智能时代的人才成长平台，连接国家战略、产业升级与个人职业发展。</p>
         </div>
 
         <div class="footer__meta">
-          <p><strong>联系方式：</strong>400-800-2026 | contact@spark-tech.cn</p>
+          <p><strong>联系方式：</strong>400-800-2026 | contact@gupaotech.cn</p>
           <p><strong>公司地址：</strong>北京市海淀区创新大道 88 号 A 座 16 层</p>
           <p><strong>快捷链接：</strong>产品服务 / 企业方案 / 社区生态 / 加入我们</p>
         </div>
       </div>
 
       <div class="container footer__bottom">
-        <p>© 2026 星火科技有限公司 All Rights Reserved.</p>
+        <p>© 2026 咕泡科技有限公司 All Rights Reserved.</p>
         <p>京 ICP 备 2026000000 号-1 | 京公网安备 11010802000000 号</p>
       </div>
     </footer>
