@@ -1,138 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>资讯动态 - 咕泡科技</title>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
-<body class="subpage subpage--news">
-  <div class="bg-orb bg-orb--1"></div>
-  <div class="bg-orb bg-orb--2"></div>
-
-  <header class="site-header">
-    <div class="container">
-      <div class="header-card glass">
-        <a class="logo" href="./index.html" aria-label="咕泡科技首页">
-          <span class="logo__icon" aria-hidden="true"></span>
-          <span class="logo__text">
-            <strong>咕泡科技</strong>
-            <em>GUPAO TECH</em>
-          </span>
-        </a>
-        <nav class="main-nav" aria-label="主导航">
-          <ul>
-            <li><a href="./index.html">首页</a></li>
-            <li><a href="./products.html">产品服务</a></li>
-            <li><a href="./solutions.html">企业方案</a></li>
-            <li><a href="./ecosystem.html">社区生态</a></li>
-            <li><a class="active" href="./news.html">资讯动态</a></li>
-            <li><a href="./story.html">品牌故事</a></li>
-            <li><a href="./careers.html">加入我们</a></li>
-            <li><a href="./contact.html">联系我们</a></li>
-          </ul>
-        </nav>
+<body>
+  <div class="site-shell">
+    <header class="header">
+      <div class="header__inner glass glass--header">
+        <a href="./index.html" class="logo" aria-label="咕泡科技首页">咕泡科技<span>GUPAO TECH</span></a>
+        <nav class="nav" aria-label="主导航"><ul><li><a href="./index.html">首页</a></li><li><a href="./products.html">产品服务</a></li><li><a href="./solutions.html">企业方案</a></li><li><a href="./ecosystem.html">社区生态</a></li><li><a class="active" href="./news.html">资讯动态</a></li><li><a href="./story.html">品牌故事</a></li><li><a href="./careers.html">加入我们</a></li><li><a href="./contact.html">联系我们</a></li></ul></nav>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="sub-hero section-space">
-      <div class="container">
-        <div class="sub-hero__card glass">
-          <p class="hero-kicker">Newsroom</p>
-          <h1>追踪 AI 产业变化与实战观点</h1>
-          <div class="sub-hero-banner sub-hero-banner--news" role="img" aria-label="资讯动态视觉区">Newsroom Signal</div>
-          <p>实时更新政策趋势、产品发布、行业案例与学习方法，帮助团队快速形成决策共识。</p>
-        </div>
-      </div>
-    </section>
+    <main class="subpage-main">
+      <section class="container sub-hero sub-hero--news glass"><div><p class="section-tag">Newsroom</p><h1>追踪 AI 产业变化与实战观点</h1><p class="sub-hero__desc">聚合政策、案例、方法论与产品趋势，帮助团队形成更快的决策共识。</p><a class="btn btn--primary" href="./contact.html">订阅资讯简报</a></div><div class="sub-hero__visual">NEWSROOM SIGNAL</div></section>
 
-    <section class="section-space">
-      <div class="container">
-        <div class="news-magazine">
-          <article class="glass news-magazine__featured">
-            <p class="news-meta">头条 · 2026-03-06</p>
-            <h2>AI 项目进入“场景深耕期”：组织能力成为新分水岭</h2>
-            <p>从“能不能做”转向“能不能持续跑”，企业更关注模型治理、流程协同与人才结构升级。</p>
-            <a href="#">阅读全文</a>
-          </article>
-          <aside class="news-magazine__briefs">
-            <article class="glass news-magazine__brief">
-              <p class="news-meta">快讯</p>
-              <h3>政策观察：AI 人才认证体系加速完善</h3>
-            </article>
-            <article class="glass news-magazine__brief">
-              <p class="news-meta">研究</p>
-              <h3>企业应用：模型成本与效果进入精细化博弈</h3>
-            </article>
-            <article class="glass news-magazine__brief">
-              <p class="news-meta">活动</p>
-              <h3>咕泡发布新一期“AI 产品实战公开课”</h3>
-            </article>
-          </aside>
-        </div>
-      </div>
-    </section>
+      <section class="container sub-section news-magazine">
+        <article class="glass news-magazine__featured"><p class="sub-card__tag">头条 · 2026-03-06</p><h2>AI 项目进入场景深耕期，组织能力成为新分水岭</h2><p>从“能不能做”转向“能不能持续跑”，企业开始重视治理机制与人才结构协同。</p><a href="#">阅读全文</a></article>
+        <aside class="news-magazine__list"><article class="glass"><p class="sub-card__tag">快讯</p><h3>政策观察：人才认证体系持续完善</h3></article><article class="glass"><p class="sub-card__tag">研究</p><h3>模型成本与效果进入精细化博弈</h3></article><article class="glass"><p class="sub-card__tag">活动</p><h3>咕泡发布新一期 AI 产品公开课</h3></article></aside>
+      </section>
 
-    <section class="section-space">
-      <div class="container">
-        <div class="news-columns">
-          <article class="glass news-columns__card">
-            <p class="news-meta">深度解读</p>
-            <h3>从 PoC 到规模化：为什么组织机制比模型更难？</h3>
-            <p>拆解 12 个企业案例，提炼 AI 项目治理的关键动作。</p>
-            <a href="#">继续阅读</a>
-          </article>
-          <article class="glass news-columns__card">
-            <p class="news-meta">案例复盘</p>
-            <h3>制造业客户如何在 8 周内完成智能排产试点</h3>
-            <p>围绕目标拆解、流程重构和产线协同的实战复盘。</p>
-            <a href="#">继续阅读</a>
-          </article>
-          <article class="glass news-columns__card">
-            <p class="news-meta">职业洞察</p>
-            <h3>AI 时代技术岗位能力地图：从执行到系统思维</h3>
-            <p>给工程师、产品、运营和管理者的能力升级建议。</p>
-            <a href="#">继续阅读</a>
-          </article>
-        </div>
-      </div>
-    </section>
+      <section class="container sub-section news-columns">
+        <article class="glass"><p class="sub-card__tag">深度解读</p><h3>从 PoC 到规模化：为什么组织机制更难？</h3><p>拆解 12 个企业案例，提炼治理关键动作。</p></article>
+        <article class="glass"><p class="sub-card__tag">案例复盘</p><h3>制造业客户 8 周完成智能排产试点</h3><p>围绕目标拆解、流程重构和协同机制展开复盘。</p></article>
+        <article class="glass"><p class="sub-card__tag">职业洞察</p><h3>AI 时代岗位能力地图如何重构</h3><p>给工程、产品、运营、管理角色的升级建议。</p></article>
+      </section>
+    </main>
 
-    <section class="section-space">
-      <div class="container">
-        <div class="cta-banner glass">
-          <div>
-            <h2>希望获取每周 AI 资讯摘要？</h2>
-            <p>订阅后将定期收到行业趋势、方法论与实战案例更新。</p>
-          </div>
-          <a class="btn" href="./contact.html">订阅资讯简报</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h3>咕泡科技 GUPAO TECH</h3>
-          <p>专注 AI 人才培养与产业赋能，连接教育、技术与职业发展。</p>
-        </div>
-        <div>
-          <h4>联系我们</h4>
-          <p>电话：400-800-2026</p>
-          <p>邮箱：contact@gupaotech.com</p>
-          <p>地址：上海市浦东新区科技创新大道 88 号</p>
-        </div>
-        <div>
-          <h4>版权信息</h4>
-          <p>© 2026 咕泡科技 版权所有</p>
-          <p>沪ICP备2026000001号-1</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <footer class="footer" aria-label="页脚信息"><div class="container footer__inner"><div class="footer__brand"><h2>咕泡科技 GUPAO TECH</h2><p>面向智能时代的人才成长平台，连接国家战略、产业升级与个人职业发展。</p></div><div class="footer__meta"><p><strong>联系方式：</strong>400-800-2026 | contact@gupaotech.cn</p><p><strong>公司地址：</strong>北京市海淀区创新大道 88 号 A 座 16 层</p><p><strong>快捷链接：</strong>产品服务 / 企业方案 / 社区生态 / 加入我们</p></div></div><div class="container footer__bottom"><p>© 2026 咕泡科技有限公司 All Rights Reserved.</p><p>京 ICP 备 2026000000 号-1 | 京公网安备 11010802000000 号</p></div></footer>
+  </div>
 </body>
 </html>

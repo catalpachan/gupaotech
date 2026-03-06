@@ -1,26 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>产品服务 - 咕泡科技</title>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
-<body class="subpage subpage--products">
-  <div class="bg-orb bg-orb--1"></div>
-  <div class="bg-orb bg-orb--2"></div>
-
-  <header class="site-header">
-    <div class="container">
-      <div class="header-card glass">
-        <a class="logo" href="./index.html" aria-label="咕泡科技首页">
-          <span class="logo__icon" aria-hidden="true"></span>
-          <span class="logo__text">
-            <strong>咕泡科技</strong>
-            <em>GUPAO TECH</em>
-          </span>
+<body>
+  <div class="site-shell">
+    <header class="header">
+      <div class="header__inner glass glass--header">
+        <a href="./index.html" class="logo" aria-label="咕泡科技首页">
+          咕泡科技
+          <span>GUPAO TECH</span>
         </a>
-        <nav class="main-nav" aria-label="主导航">
+        <nav class="nav" aria-label="主导航">
           <ul>
             <li><a href="./index.html">首页</a></li>
             <li><a class="active" href="./products.html">产品服务</a></li>
@@ -33,139 +27,88 @@
           </ul>
         </nav>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="sub-hero section-space">
-      <div class="container">
-        <div class="sub-hero__card glass">
-          <p class="hero-kicker">Products &amp; Services</p>
+    <main class="subpage-main">
+      <section class="container sub-hero sub-hero--products glass">
+        <div>
+          <p class="section-tag">Products &amp; Services</p>
           <h1>面向企业增长的 AI 产品服务矩阵</h1>
-          <div class="sub-hero-banner sub-hero-banner--products" role="img" aria-label="产品服务视觉区">AI Product Matrix</div>
-          <p>将训练、应用、工程与运营打通为一个可量化的产品闭环，帮助组织更快从试点走向规模化。</p>
+          <p class="sub-hero__desc">覆盖咨询、实施、训练与运营，帮助团队将 AI 能力稳定转化为业务价值。</p>
+          <a class="btn btn--primary" href="./contact.html">预约产品顾问</a>
         </div>
-      </div>
-    </section>
+        <div class="sub-hero__visual">PRODUCT MATRIX</div>
+      </section>
 
-    <section class="section-space">
-      <div class="container">
-        <div class="products-bento">
-          <article class="glass products-bento__card products-bento__card--wide">
-            <p class="news-meta">01 / 平台底座</p>
-            <h3>企业 AI 中台（模型 + 数据 + 工作流）</h3>
-            <p>统一管理模型能力、权限和业务流程，实现跨部门能力复用与治理。</p>
-          </article>
-          <article class="glass products-bento__card">
-            <p class="news-meta">02 / 业务提效</p>
-            <h3>AIGC 内容工厂</h3>
-            <p>服务营销、运营、客服等场景，形成稳定产能与质量策略。</p>
-          </article>
-          <article class="glass products-bento__card">
-            <p class="news-meta">03 / 人才体系</p>
-            <h3>岗位能力成长引擎</h3>
-            <p>按角色建立课程和任务链路，打通学习到业务落地。</p>
-          </article>
-          <article class="glass products-bento__card">
-            <p class="news-meta">04 / 研发协同</p>
-            <h3>智能工程助手</h3>
-            <p>覆盖需求拆解、代码协作、测试和上线流程，提升交付稳定性。</p>
-          </article>
-          <article class="glass products-bento__card products-bento__card--tall">
-            <p class="news-meta">05 / 数据价值</p>
-            <h3>AI 经营驾驶舱</h3>
-            <p>实时追踪策略、转化、成本和 ROI，支持管理层决策闭环。</p>
-          </article>
-        </div>
-      </div>
-    </section>
+      <section class="container sub-section products-bento">
+        <article class="glass products-bento__card products-bento__card--wide">
+          <p class="sub-card__tag">平台底座</p>
+          <h3>企业 AI 中台</h3>
+          <p>统一模型、数据、工作流与权限策略，形成可治理的组织级能力层。</p>
+        </article>
+        <article class="glass products-bento__card">
+          <p class="sub-card__tag">业务提效</p>
+          <h3>AIGC 内容工厂</h3>
+          <p>用于营销、客服、运营多场景，提升内容生产效率和一致性。</p>
+        </article>
+        <article class="glass products-bento__card">
+          <p class="sub-card__tag">人才体系</p>
+          <h3>岗位能力引擎</h3>
+          <p>以任务链路驱动课程学习，实现“学了就能做”。</p>
+        </article>
+        <article class="glass products-bento__card">
+          <p class="sub-card__tag">研发协同</p>
+          <h3>智能工程助手</h3>
+          <p>从需求到测试上线全链路辅助，提高团队交付稳定性。</p>
+        </article>
+        <article class="glass products-bento__card products-bento__card--tall">
+          <p class="sub-card__tag">经营分析</p>
+          <h3>AI 经营驾驶舱</h3>
+          <p>整合项目成效、效率与成本指标，为管理层提供实时决策视图。</p>
+        </article>
+      </section>
 
-    <section class="section-space">
-      <div class="container">
-        <div class="glass products-operating">
-          <div>
-            <h2 class="section-title">产品运营闭环</h2>
-            <div class="products-flow">
-              <div class="products-flow__step"><span>策略定义</span><p>梳理业务目标、角色分层和指标口径。</p></div>
-              <div class="products-flow__step"><span>系统搭建</span><p>配置模型、数据源与协作流程。</p></div>
-              <div class="products-flow__step"><span>场景上线</span><p>在核心业务流程中灰度试点与优化。</p></div>
-              <div class="products-flow__step"><span>规模复制</span><p>固化方法论并推广到更多业务单元。</p></div>
-            </div>
+      <section class="container sub-section products-dual glass">
+        <div>
+          <h2>产品运营闭环</h2>
+          <div class="products-flow">
+            <div class="products-flow__step"><strong>策略定义</strong><p>明确目标、角色分层与指标口径。</p></div>
+            <div class="products-flow__step"><strong>系统搭建</strong><p>完成模型接入与数据流程配置。</p></div>
+            <div class="products-flow__step"><strong>场景上线</strong><p>在核心业务中灰度试点并迭代。</p></div>
+            <div class="products-flow__step"><strong>规模复制</strong><p>标准化并推广到更多业务单元。</p></div>
           </div>
-          <aside class="products-metrics">
-            <article>
-              <strong>6 周</strong>
-              <p>典型项目从评估到首批上线周期</p>
-            </article>
-            <article>
-              <strong>40%+</strong>
-              <p>流程自动化后的人效提升中位值</p>
-            </article>
-            <article>
-              <strong>5+ 行业</strong>
-              <p>零售、制造、教育、金融、互联网实践模板</p>
-            </article>
-          </aside>
         </div>
-      </div>
-    </section>
+        <aside class="products-metrics">
+          <article><span>6 周</span><p>典型项目从评估到上线周期</p></article>
+          <article><span>40%+</span><p>流程自动化后的人效提升中位值</p></article>
+          <article><span>5+ 行业</span><p>制造/零售/教育/金融等实践模板</p></article>
+        </aside>
+      </section>
 
-    <section class="section-space">
-      <div class="container">
-        <h2 class="section-title">产品组合与交付方式</h2>
-        <div class="products-plan">
-          <article class="glass products-plan__row">
-            <h3>Starter</h3>
-            <p>适合试点团队，构建首个业务场景样板。</p>
-            <span>模型接入 + 场景设计 + 训练营</span>
-          </article>
-          <article class="glass products-plan__row">
-            <h3>Growth</h3>
-            <p>适合规模化推进，建立跨部门协同机制。</p>
-            <span>工作流中台 + 管理驾驶舱 + 运营支持</span>
-          </article>
-          <article class="glass products-plan__row">
-            <h3>Enterprise</h3>
-            <p>适合集团级组织，沉淀标准化 AI 能力体系。</p>
-            <span>治理体系 + 安全策略 + 组织升级咨询</span>
-          </article>
-        </div>
-      </div>
-    </section>
+      <section class="container sub-section products-plan">
+        <article class="glass products-plan__item"><h3>Starter</h3><p>小团队试点，快速验证价值。</p><em>模型接入 + 场景设计 + 训练营</em></article>
+        <article class="glass products-plan__item"><h3>Growth</h3><p>规模化推进，建立跨部门协同。</p><em>流程中台 + 运营看板 + 顾问支持</em></article>
+        <article class="glass products-plan__item"><h3>Enterprise</h3><p>集团化治理，沉淀标准能力体系。</p><em>安全治理 + 组织升级 + 长期陪跑</em></article>
+      </section>
+    </main>
 
-    <section class="section-space">
-      <div class="container">
-        <div class="cta-banner glass">
-          <div>
-            <h2>需要一套可快速落地的 AI 产品组合吗？</h2>
-            <p>告诉我们你的业务目标，我们会给出按阶段可执行的实施路径。</p>
-          </div>
-          <a class="btn" href="./contact.html">预约产品顾问</a>
+    <footer class="footer" aria-label="页脚信息">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <h2>咕泡科技 GUPAO TECH</h2>
+          <p>面向智能时代的人才成长平台，连接国家战略、产业升级与个人职业发展。</p>
+        </div>
+        <div class="footer__meta">
+          <p><strong>联系方式：</strong>400-800-2026 | contact@gupaotech.cn</p>
+          <p><strong>公司地址：</strong>北京市海淀区创新大道 88 号 A 座 16 层</p>
+          <p><strong>快捷链接：</strong>产品服务 / 企业方案 / 社区生态 / 加入我们</p>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h3>咕泡科技 GUPAO TECH</h3>
-          <p>专注 AI 人才培养与产业赋能，连接教育、技术与职业发展。</p>
-        </div>
-        <div>
-          <h4>联系我们</h4>
-          <p>电话：400-800-2026</p>
-          <p>邮箱：contact@gupaotech.com</p>
-          <p>地址：上海市浦东新区科技创新大道 88 号</p>
-        </div>
-        <div>
-          <h4>版权信息</h4>
-          <p>© 2026 咕泡科技 版权所有</p>
-          <p>沪ICP备2026000001号-1</p>
-        </div>
+      <div class="container footer__bottom">
+        <p>© 2026 咕泡科技有限公司 All Rights Reserved.</p>
+        <p>京 ICP 备 2026000000 号-1 | 京公网安备 11010802000000 号</p>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>

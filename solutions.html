@@ -1,26 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>企业方案 - 咕泡科技</title>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
-<body class="subpage subpage--solutions">
-  <div class="bg-orb bg-orb--1"></div>
-  <div class="bg-orb bg-orb--2"></div>
-
-  <header class="site-header">
-    <div class="container">
-      <div class="header-card glass">
-        <a class="logo" href="./index.html" aria-label="咕泡科技首页">
-          <span class="logo__icon" aria-hidden="true"></span>
-          <span class="logo__text">
-            <strong>咕泡科技</strong>
-            <em>GUPAO TECH</em>
-          </span>
-        </a>
-        <nav class="main-nav" aria-label="主导航">
+<body>
+  <div class="site-shell">
+    <header class="header">
+      <div class="header__inner glass glass--header">
+        <a href="./index.html" class="logo" aria-label="咕泡科技首页">咕泡科技<span>GUPAO TECH</span></a>
+        <nav class="nav" aria-label="主导航">
           <ul>
             <li><a href="./index.html">首页</a></li>
             <li><a href="./products.html">产品服务</a></li>
@@ -33,120 +24,56 @@
           </ul>
         </nav>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="sub-hero section-space">
-      <div class="container">
-        <div class="sub-hero__card glass">
-          <p class="hero-kicker">Enterprise Solutions</p>
-          <h1>面向不同行业的 AI 转型方案</h1>
-          <div class="sub-hero-banner sub-hero-banner--solutions" role="img" aria-label="企业方案视觉区">Industry Solution Blueprint</div>
-          <p>我们基于行业场景、组织成熟度与数据基础，组合技术能力与人才能力，确保方案可执行、可评估、可持续。</p>
+    <main class="subpage-main">
+      <section class="container sub-hero sub-hero--solutions glass">
+        <div>
+          <p class="section-tag">Enterprise Solutions</p>
+          <h1>按行业与阶段定制 AI 转型方案</h1>
+          <p class="sub-hero__desc">从业务诊断到交付落地，提供可执行、可评估、可复制的方案体系。</p>
+          <a class="btn btn--primary" href="./contact.html">获取行业方案</a>
         </div>
-      </div>
-    </section>
+        <div class="sub-hero__visual">SOLUTION BLUEPRINT</div>
+      </section>
 
-    <section class="section-space">
-      <div class="container">
-        <div class="solutions-layout">
-          <aside class="glass solutions-layout__rail">
-            <h3>行业场景</h3>
-            <ul>
-              <li class="active">制造业智能运营</li>
-              <li>零售营销增长</li>
-              <li>教育服务升级</li>
-              <li>金融风控优化</li>
-            </ul>
-          </aside>
-          <div class="glass solutions-layout__panel">
-            <h2>制造业智能运营方案</h2>
-            <p>围绕设备维护、排产优化、质量追踪和供应链协同，构建覆盖“数据采集 - 预测决策 - 执行反馈”的闭环系统。</p>
-            <div class="solutions-layout__grid">
-              <article>
-                <h4>痛点拆解</h4>
-                <p>数据孤岛、计划波动、交付不确定。</p>
-              </article>
-              <article>
-                <h4>方案架构</h4>
-                <p>统一数据层 + 场景智能体 + 运营看板。</p>
-              </article>
-              <article>
-                <h4>交付节奏</h4>
-                <p>2 周诊断、4 周试点、8 周扩展。</p>
-              </article>
-              <article>
-                <h4>结果评估</h4>
-                <p>效率、成本、质量、响应速度四维评估。</p>
-              </article>
-            </div>
+      <section class="container sub-section solutions-layout">
+        <aside class="glass solutions-layout__rail">
+          <h3>行业场景</h3>
+          <ul>
+            <li class="active">制造业智能运营</li>
+            <li>零售增长与用户运营</li>
+            <li>教育服务升级</li>
+            <li>金融风控与合规</li>
+          </ul>
+        </aside>
+        <article class="glass solutions-layout__panel">
+          <h2>制造业智能运营方案</h2>
+          <p>围绕排产优化、质量追踪、供应链协同，构建“数据 - 决策 - 执行”闭环。</p>
+          <div class="solutions-grid">
+            <div><strong>痛点拆解</strong><p>计划波动、响应慢、数据割裂。</p></div>
+            <div><strong>架构设计</strong><p>统一数据层 + 场景智能体 + 驾驶舱。</p></div>
+            <div><strong>交付节奏</strong><p>2 周诊断 / 4 周试点 / 8 周扩展。</p></div>
+            <div><strong>结果评估</strong><p>效率、成本、质量、时效四维追踪。</p></div>
           </div>
-        </div>
-      </div>
-    </section>
+        </article>
+      </section>
 
-    <section class="section-space">
-      <div class="container">
-        <h2 class="section-title">企业交付旅程</h2>
-        <div class="solutions-journey">
-          <article class="glass solutions-journey__item">
-            <span>Step 01</span>
-            <h3>战略对齐</h3>
-            <p>统一目标、口径与阶段性里程碑。</p>
-          </article>
-          <article class="glass solutions-journey__item">
-            <span>Step 02</span>
-            <h3>试点落地</h3>
-            <p>选取高价值场景快速验证可行性。</p>
-          </article>
-          <article class="glass solutions-journey__item">
-            <span>Step 03</span>
-            <h3>组织扩展</h3>
-            <p>沉淀标准方案并推广至更多业务线。</p>
-          </article>
-          <article class="glass solutions-journey__item">
-            <span>Step 04</span>
-            <h3>持续优化</h3>
-            <p>通过数据反馈持续更新模型与流程。</p>
-          </article>
-        </div>
-      </div>
-    </section>
+      <section class="container sub-section solutions-journey">
+        <article class="glass"><span>Step 01</span><h3>战略对齐</h3><p>统一目标与里程碑。</p></article>
+        <article class="glass"><span>Step 02</span><h3>试点落地</h3><p>选高价值场景快速验证。</p></article>
+        <article class="glass"><span>Step 03</span><h3>组织扩展</h3><p>固化方案并跨部门推广。</p></article>
+        <article class="glass"><span>Step 04</span><h3>持续优化</h3><p>基于数据反馈持续迭代。</p></article>
+      </section>
+    </main>
 
-    <section class="section-space">
-      <div class="container">
-        <div class="cta-banner glass">
-          <div>
-            <h2>想要获得你所在行业的 AI 方案样板？</h2>
-            <p>我们提供按行业拆解的诊断报告与可执行路线图。</p>
-          </div>
-          <a class="btn" href="./contact.html">获取行业方案</a>
-        </div>
+    <footer class="footer" aria-label="页脚信息">
+      <div class="container footer__inner">
+        <div class="footer__brand"><h2>咕泡科技 GUPAO TECH</h2><p>面向智能时代的人才成长平台，连接国家战略、产业升级与个人职业发展。</p></div>
+        <div class="footer__meta"><p><strong>联系方式：</strong>400-800-2026 | contact@gupaotech.cn</p><p><strong>公司地址：</strong>北京市海淀区创新大道 88 号 A 座 16 层</p><p><strong>快捷链接：</strong>产品服务 / 企业方案 / 社区生态 / 加入我们</p></div>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h3>咕泡科技 GUPAO TECH</h3>
-          <p>专注 AI 人才培养与产业赋能，连接教育、技术与职业发展。</p>
-        </div>
-        <div>
-          <h4>联系我们</h4>
-          <p>电话：400-800-2026</p>
-          <p>邮箱：contact@gupaotech.com</p>
-          <p>地址：上海市浦东新区科技创新大道 88 号</p>
-        </div>
-        <div>
-          <h4>版权信息</h4>
-          <p>© 2026 咕泡科技 版权所有</p>
-          <p>沪ICP备2026000001号-1</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+      <div class="container footer__bottom"><p>© 2026 咕泡科技有限公司 All Rights Reserved.</p><p>京 ICP 备 2026000000 号-1 | 京公网安备 11010802000000 号</p></div>
+    </footer>
+  </div>
 </body>
 </html>
